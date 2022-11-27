@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 100px 30px;
+    background-color: black;
+}
+
+.movie {
+    width: 23%;
+    height: 500px;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.4s linear;
+    display: inline-block;
+}
+
+.movie:hover {
+    transform: scale(1.1);
+}
+
+.movie1 {
+    background-image: url("img/film1-1.webp");
+}
+
+.movie1.effect:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("img/film1-2.webp");
+    opacity: 0;
+    transition: opacity 0.5s;
+    pointer-events: none;
+}
+
+.movie2 {
+    background-image: url("img/film2-1.webp");
+}
+
+.movie2:hover {
+    background-image: url("img/film2-2.webp");
+}
+
+.movie3 {
+    background-image: url("img/film3-1.webp");
+}
+
+.movie3:hover {
+    background-image: url("img/film3-2.webp");
+}
+
+.movie4 {
+    background-image: url("img/film4-1.webp");
+}
+
+.movie4.effect:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("img/film4-2.webp");
+    opacity: 0;
+    transition: opacity 0.5s;
+    pointer-events: none;
+}
+
+
+.movie5 {
+    background-image: url("img/film5-1.webp");
+}
+
+.movie5:hover {
+    background-image: url("img/film5-2.webp")
+}
+
+.effect:hover:before {
+    opacity: 1;
+}
